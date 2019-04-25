@@ -6,7 +6,7 @@ class PlanEvent extends StatelessWidget {
     return Container(
       width: MediaQuery.of(context).size.width,
       color: Colors.amber,
-      child: Text(EventPlanning.of(context).data)
+      child: Text(EventPlanning.of(context).data[0])
     );
   }
 }

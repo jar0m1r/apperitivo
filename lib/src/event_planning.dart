@@ -14,9 +14,9 @@ class EventPlanning extends InheritedWidget {
   }
 
   void addItem(item){
-    setState((){
-      data.add(item);
-    });
+    //setState((){
+    //  data.add(item);
+    //});
   }
 
    static EventPlanning of(BuildContext context) {
