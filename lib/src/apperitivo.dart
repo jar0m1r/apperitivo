@@ -7,16 +7,16 @@ class Apperitivo extends StatelessWidget {
 
   Widget build(BuildContext context){
     return MaterialApp(
-      home: Scaffold(
-        body: EventPlanning(
-          data: ['when', 'where', 'who', 'options'],
-          child : Column(
-            children: [
-              Expanded(flex: 6, child: PlanEvent()),
-              Expanded(flex: 4, child: EventSummary())
-              ]
+      home: EventPlanning(
+          topics: ['when', 'where', 'who', 'options'],
+          child : Scaffold(
+            body: Column(
+              children: [
+                Expanded(flex: 6, child: PlanEvent()),
+                Expanded(flex: 4, child: EventSummary())
+                ]
+            ),
           ),
-        ),
       ),
     );
   }
